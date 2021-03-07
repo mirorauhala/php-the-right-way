@@ -1,24 +1,25 @@
 # Tervetuloa
 
-There's a lot of outdated information on the Web that leads new PHP users astray,
-propagating bad practices and insecure code. _PHP: The Right Way_ is an easy-to-read,
-quick reference for PHP popular coding standards, links to authoritative tutorials
-around the Web and what the contributors consider to be best practices at the present
-time.
+Verkossa on paljon vanhentunutta tietoa joka johtaa uusia PHP käyttäjiä harhaan,
+levittäen huonoja käytäntöjä sekä turvatonta koodia. _PHP: Oikealla tavalla_ on
+helposti luettava, nopea viite suosituille PHP-koodausstandardeille, sisältäen
+linkkejä arvovaltaisiin opetusohjelmiin ja mitä kirjoittajat pitävät parhaina
+käytäntöinä tällä hetkellä.
 
-_There is no canonical way to use PHP_. This website aims to introduce new PHP
-developers to some topics which they may not discover until it is too late, and aims
-to give seasoned pros some fresh ideas on those topics they've been doing for years
-without ever reconsidering. This website will also not tell you which tools to use, but
-instead offer suggestions for multiple options, when possible explaining the differences
-in approach and use-case.
+_Ei ole oikeaa tapaa käyttää PHP:ta_. Tämä verkkosivun tarkoituksena on esitellä
+uusille PHP kehittäjille muutamia aiheita, joita he eivät välttämättä löydä,
+paitsi kunnes on liian myöhäistä. Tavoitteena on myös antaa kokeneille
+ammattilaisille tuoreita ideoita niistä aiheista, joita he ovat tehneet jo
+vuosia harkitsematta. Tämä verkkosivu ei myöskään kerro sinulle mitä työkaluja
+käyttää, sen sijaan tarjoaa ehdotuksia useista vaihtoehdoista, sekä selittäen
+mahdollisia eroja lähestymistavassa ja käyttötarkoituksessa.
 
-This is a living document and will continue to be updated with more helpful information
-and examples as they become available.
+Tämä on elävä dokumentti, jota tullaan päivittämään sitä mukaa kun hyödyllistä
+tietoa tulee saataville.
 
 ## Käännökset
 
-_PHP: The Right Way_ is translated into many different languages:
+_PHP: Oikealla tavalla_ on käännetty monille eri kielille:
 
 * [English](http://www.phptherightway.com)
 * [Español](http://phpdevenezuela.github.io/php-the-right-way)
@@ -44,11 +45,12 @@ _PHP: The Right Way_ is translated into many different languages:
 
 ## Kirja
 
-The most recent version of _PHP: The Right Way_ is also available in PDF, EPUB and MOBI formats. [Go to Leanpub][1]
+Tuorein versio kirjasta _PHP: Oikealla tavalla_ on myös saatavilla PDF, EPUB,
+ja MOBI muodossa. [Siirry Leanpubiin][1]
 
 ## Miten osallistua?
 
-Help make this website the best resource for new PHP programmers! [Contribute on GitHub][2]
+Auta tekemään tästä verkkosivustosta paras resurssi uusille PHP-ohjelmoijille! [Osallistu GitHubissa][2]
 
 [1]: https://leanpub.com/phptherightway
 [2]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
