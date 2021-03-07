@@ -6,7 +6,7 @@ helposti luettava, nopea viite suosituille PHP-koodausstandardeille, sisältäen
 linkkejä arvovaltaisiin opetusohjelmiin ja mitä kirjoittajat pitävät parhaina
 käytäntöinä tällä hetkellä.
 
-_Ei ole oikeaa tapaa käyttää PHP:ta_. Tämä verkkosivun tarkoituksena on esitellä
+_Ei ole oikeaa tapaa käyttää PHP:ta_. Tämän verkkosivun tarkoituksena on esitellä
 uusille PHP kehittäjille muutamia aiheita, joita he eivät välttämättä löydä,
 paitsi kunnes on liian myöhäistä. Tavoitteena on myös antaa kokeneille
 ammattilaisille tuoreita ideoita niistä aiheista, joita he ovat tehneet jo
