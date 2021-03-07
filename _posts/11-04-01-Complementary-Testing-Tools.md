@@ -3,12 +3,12 @@ isChild: true
 anchor:  complementary_testing_tools
 ---
 
-## Complementary Testing Tools {#complementary_testing_tools_title}
+## Täydentävät testaustyökalut {#complementary_testing_tools_title}
 
 Besides individual testing and behavior driven frameworks, there are also a number of generic frameworks and helper
 libraries useful for any preferred approach taken.
 
-### Tool Links
+### Työkalujen linkkejä
 
 * [Selenium] is a browser automation tool which can be [integrated with PHPUnit]
 * [Mockery] is a Mock Object Framework which can be integrated with [PHPUnit] or [PHPSpec]

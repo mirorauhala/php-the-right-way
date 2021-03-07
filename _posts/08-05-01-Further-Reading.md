@@ -3,9 +3,9 @@ isChild: true
 anchor:  templating_further_reading
 ---
 
-## Further Reading {#templating_further_reading_title}
+## Lisäluettavaa {#templating_further_reading_title}
 
-### Articles & Tutorials
+### Artikkelit ja tutoriaalit
 
 * [Templating Engines in PHP](http://fabien.potencier.org/article/34/templating-engines-in-php)
 * [An Introduction to Views & Templating in CodeIgniter](https://code.tutsplus.com/tutorials/an-introduction-to-views-templating-in-codeigniter--net-25648)
@@ -15,7 +15,7 @@ anchor:  templating_further_reading
 * [Working With Templates in Symfony 2](https://code.tutsplus.com/tutorials/working-with-templates-in-symfony-2--cms-21172)
 * [Writing Safer Templates](https://github.com/box/brainy/wiki/Writing-Safe-Templates)
 
-### Libraries
+### Kirjastot
 
 * [Aura.View](https://github.com/auraphp/Aura.View) *(native)*
 * [Blade](https://laravel.com/docs/blade) *(compiled, framework specific)*

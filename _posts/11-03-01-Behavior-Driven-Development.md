@@ -3,7 +3,7 @@ isChild: true
 anchor:  behavior_driven_development
 ---
 
-## Behavior Driven Development {#behavior_driven_development_title}
+## Käyttäytymiseen perustuva kehitys (BDD) {#behavior_driven_development_title}
 
 There are two different types of Behavior-Driven Development (BDD): SpecBDD and StoryBDD. SpecBDD focuses on technical
 behavior of code, while StoryBDD focuses on business or feature behaviors or interactions. PHP has frameworks for both
@@ -17,7 +17,7 @@ With SpecBDD, you write specifications that describe how your actual code should
 or method, you are describing how that function or method should behave. PHP offers the [PHPSpec] framework for this
 purpose. This framework is inspired by the [RSpec project][Rspec] for Ruby.
 
-### BDD Links
+### BDD linkkejä
 
 * [Behat], the StoryBDD framework for PHP, inspired by Ruby's [Cucumber] project;
 * [PHPSpec], the SpecBDD framework for PHP, inspired by Ruby's [RSpec] project;

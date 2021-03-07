@@ -3,7 +3,7 @@ isChild: true
 anchor:  namespaces
 ---
 
-## Namespaces {#namespaces_title}
+## Nimiavaruudet {#namespaces_title}
 
 As mentioned above, the PHP community has a lot of developers creating lots of code. This means that one library's PHP
 code might use the same class name as another. When both libraries are used in the same namespace, they collide

@@ -3,7 +3,7 @@ isChild: true
 anchor:  building_and_deploying_your_application
 ---
 
-## Building and Deploying your Application {#building_and_deploying_your_application_title}
+## Sovelluksesi luominen ja tuotantokäyttöönoton {#building_and_deploying_your_application_title}
 
 If you find yourself doing manual database schema changes or running your tests manually before updating your files
 (manually), think twice! With every additional manual task needed to deploy a new version of your app, the chances for
@@ -20,7 +20,7 @@ Among the tasks you might want to automate are:
 * Deployment
 
 
-### Deployment Tools
+### Tuotantokäyttöönoton työkalut
 
 Deployment tools can be described as a collection of scripts that handle common tasks of software deployment. The deployment tool is not a part of your software, it acts on your software from 'outside'.
 
@@ -38,12 +38,12 @@ There are many open source tools available to help you with build automation and
 
 [Magallanes] is another tool written in PHP with simple configuration done in YAML files. It has support for multiple servers and environments, atomic deployment, and has some built in tasks that you can leverage for common tools and frameworks.
 
-#### Further reading:
+#### Lisäluettavaa:
 
 * [Automate your project with Apache Ant][apache_ant_tutorial]
 * [Deploying PHP Applications][deploying_php_applications] - paid book on best practices and tools for PHP deployment.
 
-### Server Provisioning
+### Palvelimen valmistelu
 
 Managing and configuring servers can be a daunting task when faced with many servers. There are tools for dealing with this so you can automate your infrastructure to make sure you have the right servers and that they're configured properly. They often integrate with the larger cloud hosting providers (Amazon Web Services, Heroku, DigitalOcean, etc) for managing instances, which makes scaling an application a lot easier.
 
@@ -53,7 +53,7 @@ Managing and configuring servers can be a daunting task when faced with many ser
 
 [Chef] is a powerful Ruby based system integration framework that you can build your whole server environment or virtual boxes with. It integrates well with Amazon Web Services through their service called OpsWorks.
 
-#### Further reading:
+#### Lisäluettavaa:
 
 * [An Ansible Tutorial][an_ansible_tutorial]
 * [Ansible for DevOps][ansible_for_devops] - paid book on everything Ansible
@@ -62,7 +62,7 @@ Managing and configuring servers can be a daunting task when faced with many ser
 * [Chef Cookbook which installs and configures PHP and the PEAR package management system][Chef_cookbook]
 * [Chef video tutorial series][Chef_tutorial]
 
-### Continuous Integration
+### Jatkuva integrointi
 
 > Continuous Integration is a software development practice where members of a team integrate their work frequently,
 > usually each person integrates at least daily — leading to multiple integrations per day. Many teams find that this
@@ -76,7 +76,7 @@ making continuous integration a reality even for small projects. Travis CI is a 
 for the open source community. It is integrated with GitHub and offers first class support for many languages including
 PHP.
 
-#### Further reading:
+#### Lisäluettavaa:
 
 * [Continuous Integration with Jenkins][Jenkins]
 * [Continuous Integration with PHPCI][PHPCI]

@@ -3,7 +3,7 @@ isChild: true
 anchor:  containers
 ---
 
-## Containers {#containers_title}
+## Säilytyslaatikot {#containers_title}
 
 The first thing you should understand about Dependency Injection Containers is that they are not the same thing as
 Dependency Injection. A container is a convenience utility that helps us implement Dependency Injection, however, they

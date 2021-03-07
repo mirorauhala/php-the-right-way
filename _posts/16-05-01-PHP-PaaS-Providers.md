@@ -1,10 +1,10 @@
 ---
-title: PHP PaaS Providers
+title: PHP PaaS tarjoajat
 isChild: true
 anchor:  php_paas_providers
 ---
 
-## PHP PaaS Providers {#php_paas_providers_title}
+## PHP PaaS tarjoajat {#php_paas_providers_title}
 
 * [AppFog](https://www.ctl.io/appfog/)
 * [Amezmo](https://www.amezmo.com)

@@ -3,12 +3,12 @@ isChild: true
 anchor:  complex_problem
 ---
 
-## Complex Problem {#complex_problem_title}
+## Monimutkainen ongelma {#complex_problem_title}
 
 If you have ever read about Dependency Injection then you have probably seen the terms *"Inversion of Control"* or
 *"Dependency Inversion Principle"*. These are the complex problems that Dependency Injection solves.
 
-### Inversion of Control
+### Kontrollin kääntäminen
 
 Inversion of Control is as it says, "inverting the control" of a system by keeping organizational control entirely
 separate from our objects. In terms of Dependency Injection, this means loosening our dependencies by controlling and
@@ -24,7 +24,7 @@ need them, without the need for any hard coded dependencies at all.
 
 ### S.O.L.I.D.
 
-#### Single Responsibility Principle
+#### Yhden vastuun periaate
 
 The Single Responsibility Principle is about actors and high-level architecture. It states that “A class should have
 only one reason to change.” This means that every class should _only_ have responsibility over a single part of the
@@ -32,7 +32,7 @@ functionality provided by the software. The largest benefit of this approach is 
 _reusability_. By designing our class to do just one thing, we can use (or re-use) it in any other program without
 changing it.
 
-#### Open/Closed Principle
+#### Avoin/suljettu periaate
 
 The Open/Closed Principle is about class design and feature extensions. It states that “Software entities (classes,
 modules, functions, etc.) should be open for extension, but closed for modification.” This means that we should design
@@ -44,7 +44,7 @@ The largest benefit of this approach is that we can very easily extend our code 
 having to modify existing code, meaning that we can reduce QA time, and the risk for negative impact to the application
 is substantially reduced. We can deploy new code, faster, and with more confidence.
 
-#### Liskov Substitution Principle
+#### Liskovin korvausperiaate
 
 The Liskov Substitution Principle is about subtyping and inheritance. It states that “Child classes should never break
 the parent class’ type definitions.” Or, in Robert C. Martin’s words, “Subtypes must be substitutable for their base
@@ -57,7 +57,7 @@ interface, we will already know and understand what the `embed()` method will do
 is that we have the ability to build flexible and easily-configurable programs, because when we change one object of a
 type (e.g., `FileInterface`) to another we don't need to change anything else in our program.
 
-#### Interface Segregation Principle
+#### Liitännän erottelun periaate
 
 The Interface Segregation Principle (ISP) is about _business-logic-to-clients_ communication. It states that “No client
 should be forced to depend on methods it does not use.” This means that instead of having a single monolithic interface
@@ -69,7 +69,7 @@ class would not. Conversely, a `Motorcycle` or `Tricycle` class would be interes
 `Car` or `Bus` class would not. There is no need to have all of these types of vehicles implement support for both
 `steeringWheel()` as well as `handlebars()`, so we should break-apart the source interface.
 
-#### Dependency Inversion Principle
+#### Riippuvuuden kääntämisen periaate
 
 The Dependency Inversion Principle is about removing hard-links between discrete classes so that new functionality can
 be leveraged by passing a different class. It states that one should *"Depend on Abstractions. Do not depend on

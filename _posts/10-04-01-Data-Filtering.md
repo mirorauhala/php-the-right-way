@@ -3,7 +3,7 @@ isChild: true
 anchor:  data_filtering
 ---
 
-## Data Filtering {#data_filtering_title}
+## Datan suodatus {#data_filtering_title}
 
 Never ever (ever) trust foreign input introduced to your PHP code. Always sanitize and validate foreign input before
 using it in code. The `filter_var()` and `filter_input()` functions can sanitize text and validate text formats (e.g.
@@ -35,7 +35,7 @@ file path so it can't load hidden, non-public, or sensitive files.
 * [Learn about `filter_input`][5]
 * [Learn about handling null bytes][6]
 
-### Sanitization
+### Puhdistus
 
 Sanitization removes (or escapes) illegal or unsafe characters from foreign input.
 
@@ -48,13 +48,13 @@ libraries like [HTML Purifier][html-purifier] exists for this reason.
 
 [See Sanitization Filters][2]
 
-### Unserialization
+### Unserialisointi
 
 It is dangerous to `unserialize()` data from users or other untrusted sources.  Doing so can allow malicious users to instantiate objects (with user-defined properties) whose destructors will be executed, **even if the objects themselves aren't used**.  You should therefore avoid unserializing untrusted data.
 
 If you absolutely must unserialize data from untrusted sources, use PHP 7's [`allowed_classes`][unserialize] option to restrict which object types are allowed to be unserialized.
 
-### Validation
+### Validointi
 
 Validation ensures that foreign input is what you expect. For example, you may want to validate an email address, a
 phone number, or age when processing a registration submission.

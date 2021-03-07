@@ -3,7 +3,7 @@ isChild: true
 anchor:  web_application_security
 ---
 
-## Web Application Security {#web_application_security_title}
+## Verkkosovellusten turvallisuus {#web_application_security_title}
 
 It is very important for every PHP developer to learn [the basics of web application security][4], which can be broken
 down into a handful of broad topics:

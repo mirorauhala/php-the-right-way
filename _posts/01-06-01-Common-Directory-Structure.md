@@ -1,10 +1,10 @@
 ---
-title:   Common Directory Structure
+title:   Yleinen hakemistorakenne
 isChild: true
 anchor:  common_directory_structure
 ---
 
-## Common Directory structure {#common_directory_structure_title}
+## Yleinen hakemistorakenne {#common_directory_structure_title}
 
 A common question among those starting out with writing programs for the web is, "where do I put my stuff?" Over the years, this answer has consistently been "where the `DocumentRoot` is." Although this answer is not complete, it's a great place to start.
 

@@ -1,21 +1,21 @@
 ---
-title:   Working with UTF-8
+title:   Käyttö UTF-8 kanssa
 isChild: true
 anchor:  php_and_utf8
 ---
 
-## Working with UTF-8 {#php_and_utf8_title}
+## Käyttö UTF-8 kanssa {#php_and_utf8_title}
 
 _This section was originally written by [Alex Cabal](https://alexcabal.com/) over at
 [PHP Best Practices](https://phpbestpractices.org/#utf-8) and has been used as the basis for our own UTF-8 advice_.
 
-### There's no one-liner. Be careful, detailed, and consistent.
+### Ei ole yhtä ratkaisevaa koodiriviä. Ole varovainen, tarkka ja johdonmukainen.
 
 Right now PHP does not support Unicode at a low level. There are ways to ensure that UTF-8 strings are processed OK,
 but it's not easy, and it requires digging in to almost all levels of the web app, from HTML to SQL to PHP. We'll aim
 for a brief, practical summary.
 
-### UTF-8 at the PHP level
+### UTF-8 PHP tasolla
 
 The basic string operations, like concatenating two strings and assigning strings to variables, don't need anything
 special for UTF-8. However, most string functions, like `strpos()` and `strlen()`, do need special consideration. These
@@ -47,7 +47,7 @@ fall back to non UTF-8 functions if not.
 [Multibyte String Extension]: https://secure.php.net/book.mbstring
 [patchwork/utf8]: https://packagist.org/packages/patchwork/utf8
 
-### UTF-8 at the Database level
+### UTF-8 tietokantatasolla
 
 If your PHP script accesses MySQL, there's a chance your strings could be stored as non-UTF-8 strings in the database
 even if you follow all of the precautions above.
@@ -59,7 +59,7 @@ example code below. This is _critically important_.
 Note that you must use the `utf8mb4` character set for complete UTF-8 support, not the `utf8` character set! See
 Further Reading for why.
 
-### UTF-8 at the browser level
+### UTF-8 selaintasolla
 
 Use the `mb_http_output()` function to ensure that your PHP script outputs UTF-8 strings to your browser.
 
@@ -144,7 +144,7 @@ header('Content-Type: text/html; charset=UTF-8'); // Unnecessary if your default
 </html>
 {% endhighlight %}
 
-### Further reading
+### Lisälukemista
 
 * [PHP Manual: String Operations](https://secure.php.net/language.operators.string)
 * [PHP Manual: String Functions](https://secure.php.net/ref.strings)

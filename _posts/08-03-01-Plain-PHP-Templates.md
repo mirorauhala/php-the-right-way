@@ -1,10 +1,10 @@
 ---
-title: Plain PHP Templates
+title: Tavalliset PHP mallit
 isChild: true
 anchor:  plain_php_templates
 ---
 
-## Plain PHP Templates {#plain_php_templates_title}
+## Tavalliset PHP mallit {#plain_php_templates_title}
 
 Plain PHP templates are simply templates that use native PHP code. They are a natural choice since PHP is actually a
 template language itself. That simply means that you can combine PHP code within other code, like HTML. This is
@@ -16,7 +16,7 @@ Every modern PHP framework employs some kind of template system, most of which u
 frameworks, libraries like [Plates][plates] or [Aura.View][aura] make working with plain PHP templates easier by
 offering modern template functionality such as inheritance, layouts and extensions.
 
-### Simple example of a plain PHP template
+### Yksinkertainen esimerkki tavallisesta PHP-mallista
 
 Using the [Plates][plates] library.
 
@@ -31,7 +31,7 @@ Using the [Plates][plates] library.
 <?php $this->insert('footer') ?>
 {% endhighlight %}
 
-### Example of plain PHP templates using inheritance
+### Esimerkki tavallisesta PHP-mallista käyttäen peritymistä
 
 Using the [Plates][plates] library.
 

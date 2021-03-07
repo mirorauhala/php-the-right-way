@@ -1,10 +1,10 @@
 ---
-title:   Internationalization and Localization
+title:   Kansainvälistyminen ja lokalisointi
 isChild: true
 anchor:  i18n_l10n
 ---
 
-## Internationalization (i18n) and Localization (l10n) {#i18n_l10n_title}
+## Kansainvälistyminen (i18n) ja lokalisointi (l10n) {#i18n_l10n_title}
 
 _Disclaimer for newcomers: i18n and l10n are numeronyms, a kind of abbreviation where numbers are used to shorten
 words - in our case, internationalization becomes i18n and localization, l10n._
@@ -23,7 +23,7 @@ called plural; plural in this language is indicated by adding an S after some wo
 In other languages, such as Russian or Serbian, there are two plural forms in addition to the singular - you may even
 find languages with a total of four, five or six forms, such as Slovenian, Irish or Arabic.
 
-## Common ways to implement
+## Yleisiä tapoja totetuttaa
 The easiest way to internationalize PHP software is by using array files and using those strings in templates, such as
 `<h1><?=$TRANS['title_about_page']?></h1>`. This way is, however, hardly recommended for serious projects, as it poses
 some maintenance issues along the road - some might appear in the very beginning, such as pluralization. So, please,
@@ -34,7 +34,7 @@ back to 1995 and is still a complete implementation for translating software. It
 still sporting powerful supporting tools. It is about Gettext we will be talking here. Also, to help you not get messy
 over the command-line, we will be presenting a great GUI application that can be used to easily update your l10n source
 
-### Other tools
+### Muita työkaluja
 
 There are common libraries used that support Gettext and other implementations of i18n. Some of them may seem easier to
 install or sport additional features or i18n file formats. In this document, we focus on the tools provided with the
@@ -65,7 +65,7 @@ you can use the original gettext toolchain (including Poedit) as described in th
 
 ## Gettext
 
-### Installation
+### Asennus
 You might need to install Gettext and the related PHP library by using your package manager, like `apt-get` or `yum`.
 After installed, enable it by adding `extension=gettext.so` (Linux/Unix) or `extension=php_gettext.dll` (Windows) to
 your `php.ini`.
@@ -74,9 +74,9 @@ Here we will also be using [Poedit] to create translation files. You will probab
 manager; it is available for Unix, Mac, and Windows, and can be [downloaded for free on their website][poedit_download]
 as well.
 
-### Structure
+### Rakenne
 
-#### Types of files
+#### Tiedostotyypit
 There are three files you usually deal with while working with gettext. The main ones are PO (Portable Object) and
 MO (Machine Object) files, the first being a list of readable "translated objects" and the second, the corresponding
 binary to be interpreted by gettext when doing localization. There's also a POT (Template) file, which simply contains
@@ -84,14 +84,14 @@ all existing keys from your source files, and can be used as a guide to generate
 files are not mandatory: depending on the tool you are using to do l10n, you can go just fine with only PO/MO files.
 You will always have one pair of PO/MO files per language and region, but only one POT per domain.
 
-### Domains
+### Tietoalueet
 There are some cases, in big projects, where you might need to separate translations when the same words convey 
 different meaning given a context. In those cases, you split them into different _domains_. They are, basically, named
 groups of POT/PO/MO files, where the filename is the said _translation domain_. Small and medium-sized projects usually,
 for simplicity, use only one domain; its name is arbitrary, but we will be using "main" for our code samples.
 In [Symfony] projects, for example, domains are used to separate the translation for validation messages.
 
-#### Locale code
+#### Kielikoodi
 A locale is simply a code that identifies one version of a language. It is defined following the [ISO 639-1][639-1] and 
 [ISO 3166-1 alpha-2][3166-1] specs: two lower-case letters for the language, optionally followed by an underline and two
 upper-case letters identifying the country or regional code. For [rare languages][rare], three letters are used.
@@ -100,7 +100,7 @@ For some speakers, the country part may seem redundant. In fact, some languages 
 countries, such as Austrian German (`de_AT`) or Brazilian Portuguese (`pt_BR`). The second part is used to distinguish
 between those dialects - when it is not present, it is taken as a "generic" or "hybrid" version of the language.
 
-### Directory structure
+### Hakemistorakenne
 To use Gettext, we will need to adhere to a specific structure of folders. First, you will need to select an arbitrary
 root for your l10n files in your source repository. Inside it, you will have a folder for each needed locale, and a
 fixed `LC_MESSAGES` folder that will contain all your PO/MO pairs. Example:
@@ -129,7 +129,7 @@ fixed `LC_MESSAGES` folder that will contain all your PO/MO pairs. Example:
        └─ ...
 {% endhighlight %}
 
-### Plural forms
+### Monikkomuodot
 As we said in the introduction, different languages might sport different plural rules. However, gettext saves us from
 this trouble once again. When creating a new `.po` file, you will have to declare the [plural rules][plural] for that
 language, and translated pieces that are plural-sensitive will have a different form for each of those rules. When
@@ -151,7 +151,7 @@ When calling out Gettext to do localization on sentences with counters, you will
 related number as well. Gettext will work out what rule should be in effect and use the correct localized version.
 You will need to include in the `.po` file a different sentence for each plural rule defined.
 
-### Sample implementation
+### Esimerkkitoteutus
 After all that theory, let's get a little practical. Here's an excerpt of a `.po` file - don't mind with its format,
 but with the overall content instead; you will learn how to edit it easily later:
 
@@ -185,7 +185,7 @@ the singular and plural version as `msgid` in English and their corresponding tr
 directly in the sentence, by using `%d`. The plural forms always have two `msgid` (singular and plural), so it is
 advised not to use a complex language as the source of translation.
 
-### Discussion on l10n keys
+### Kesustelua l10n avaimista
 As you might have noticed, we are using as source ID the actual sentence in English. That `msgid` is the same used
 throughout all your `.po` files, meaning other languages will have the same format and the same `msgid` fields but
 translated `msgstr` lines.
@@ -220,12 +220,12 @@ The [Gettext manual][manual] favors the first approach as, in general, it is eas
 case of trouble. That is how we will be working here as well. However, the [Symfony documentation][symfony-keys] favors
 keyword-based translation, to allow for independent changes of all translations without affecting templates as well.
 
-### Everyday usage
+### Päivittäinen käyttö
 In a typical application, you would use some Gettext functions while writing static text in your pages. Those sentences
 would then appear in `.po` files, get translated, compiled into `.mo` files and then, used by Gettext when rendering
 the actual interface. Given that, let's tie together what we have discussed so far in a step-by-step example:
 
-#### 1. A sample template file, including some different gettext calls
+#### 1. Esimerkki mallitiedosto, sisältäen erilaisia gettext kutsuja
 {% highlight php %}
 <?php include 'i18n_setup.php' ?>
 <div id="header">
@@ -251,7 +251,7 @@ the shorthand function `_()` that works the same way;
 - there's also [`dgettext()`][d_func] and [`dngettext()`][dn_func], that allows you to override the domain for a single
 call. More on domain configuration in the next example.
 
-#### 2. A sample setup file (`i18n_setup.php` as used above), selecting the correct locale and configuring Gettext
+#### 2. Esimerkki mallitiedosto (`i18n_setup.php` as used above), oikean kielen valinta ja Gettextin konfigurointi
 {% highlight php %}
 <?php
 /**
@@ -309,7 +309,7 @@ textdomain('main');
 ?>
 {% endhighlight %}
 
-#### 3. Preparing translation for the first run
+#### 3. Valmistellaan käännöstä ensimmäistä kertaa varten
 One of the great advantages Gettext has over custom framework i18n packages is its extensive and powerful file format.
 "Oh man, that’s quite hard to understand and edit by hand, a simple array would be easier!" Make no mistake,
 applications like [Poedit] are here to help - _a lot_. You can get the program from [their website][poedit_download],
@@ -342,7 +342,7 @@ scan PoEdit will display a summary of what was found and what was removed from t
 empty into the translation table, and you’ll start typing in the localized versions of those strings. Save it and a .mo
 file will be (re)compiled into the same folder and ta-dah: your project is internationalized.
 
-#### 4. Translating strings
+#### 4. Merkkijonojen kääntäminen
 As you may have noticed before, there are two main types of localized strings: simple ones and those with plural
 forms. The first ones have simply two boxes: source and localized string. The source string cannot be modified as
 Gettext/Poedit do not include the powers to alter your source files - you should change the source itself and rescan
@@ -361,14 +361,14 @@ Finally, it is advised to leave "View > Untranslated entries first" marked, as i
 any entry. From that menu, you can also open parts of the UI that allow you to leave contextual information for
 translators if needed.
 
-### Tips & Tricks
+### Vinkkejä
 
-#### Possible caching issues
+#### Mahdolliset välimuistiongelmat
 If you are running PHP as a module on Apache (`mod_php`), you might face issues with the `.mo` file being cached. It
 happens the first time it is read, and then, to update it, you might need to restart the server. On Nginx and PHP5 it
 usually takes only a couple of page refreshes to refresh the translation cache, and on PHP7 it is rarely needed.
 
-#### Additional helper functions
+#### Apufunktiot
 As preferred by many people, it is easier to use `_()` instead of `gettext()`. Many custom i18n libraries from
 frameworks use something similar to `t()` as well, to make translated code shorter. However, that is the only function
 that sports a shortcut. You might want to add in your project some others, such as `__()` or `_n()` for `ngettext()`,
@@ -391,7 +391,7 @@ the second argument, and so on.
 
 After including those new rules in the `.po` file, a new scan will bring in your new strings just as easy as before.
 
-### References
+### Viittaukset
 
 * [Wikipedia: i18n and l10n](https://en.wikipedia.org/wiki/Internationalization_and_localization)
 * [Wikipedia: Gettext](https://en.wikipedia.org/wiki/Gettext)

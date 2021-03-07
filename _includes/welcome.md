@@ -1,4 +1,4 @@
-# Welcome
+# Tervetuloa
 
 There's a lot of outdated information on the Web that leads new PHP users astray,
 propagating bad practices and insecure code. _PHP: The Right Way_ is an easy-to-read,
@@ -16,7 +16,7 @@ in approach and use-case.
 This is a living document and will continue to be updated with more helpful information
 and examples as they become available.
 
-## Translations
+## Käännökset
 
 _PHP: The Right Way_ is translated into many different languages:
 
@@ -42,11 +42,11 @@ _PHP: The Right Way_ is translated into many different languages:
 * [简体中文](https://laravel-china.github.io/php-the-right-way/)
 * [繁體中文](https://laravel-taiwan.github.io/php-the-right-way)
 
-## Book
+## Kirja
 
 The most recent version of _PHP: The Right Way_ is also available in PDF, EPUB and MOBI formats. [Go to Leanpub][1]
 
-## How to Contribute
+## Miten osallistua?
 
 Help make this website the best resource for new PHP programmers! [Contribute on GitHub][2]
 

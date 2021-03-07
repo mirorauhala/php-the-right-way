@@ -3,7 +3,7 @@ isChild: true
 anchor:  test_driven_development
 ---
 
-## Test Driven Development {#test_driven_development_title}
+## Testiohjattu kehitys (TDD) {#test_driven_development_title}
 
 From [Wikipedia](https://wikipedia.org/wiki/Test-driven_development):
 
@@ -15,7 +15,7 @@ From [Wikipedia](https://wikipedia.org/wiki/Test-driven_development):
 
 There are several different types of testing that you can do for your application:
 
-### Unit Testing
+### Yksikkötestaus
 
 Unit Testing is a programming approach to ensure functions, classes and methods are working as expected, from the point
 you build them all the way through the development cycle. By checking values going in and out of various functions and
@@ -40,7 +40,7 @@ are several alternatives
 * [Peridot](https://peridot-php.github.io/)
 * [SimpleTest](http://simpletest.org)
 
-### Integration Testing
+### Integraation testaus
 
 From [Wikipedia](https://wikipedia.org/wiki/Integration_testing):
 
@@ -53,14 +53,14 @@ From [Wikipedia](https://wikipedia.org/wiki/Integration_testing):
 Many of the same tools that can be used for unit testing can be used for integration testing as many of the same
 principles are used.
 
-### Functional Testing
+### Toiminnallinen testaus
 
 Sometimes also known as acceptance testing, functional testing consists of using tools to create automated tests that
 actually use your application instead of just verifying that individual units of code are behaving correctly and that
 individual units can speak to each other correctly. These tools typically work using real data and simulating actual
 users of the application.
 
-#### Functional Testing Tools
+#### Toiminnallisen testauksen työkaluja
 
 * [Selenium](https://docs.seleniumhq.org/)
 * [Mink](http://mink.behat.org/)

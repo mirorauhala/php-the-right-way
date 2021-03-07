@@ -1,9 +1,9 @@
 ---
-title:  Databases
+title:  Tietokannat
 anchor: databases
 ---
 
-# Databases {#databases_title}
+# Tietokannat {#databases_title}
 
 Many times your PHP code will use a database to persist information. You have a few options to connect and interact
 with your database. The recommended option **until PHP 5.1.0** was to use native drivers such as [mysqli], [pgsql],

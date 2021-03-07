@@ -1,10 +1,10 @@
 ---
 isChild: true
-title:   MySQL Extension
+title:   MySQL lisäosa
 anchor:  mysql_extension
 ---
 
-## MySQL Extension {#mysql_extension_title}
+## MySQL lisäosa {#mysql_extension_title}
 
 The [mysql] extension for PHP is incredibly old and has been superseded by two other extensions:
 

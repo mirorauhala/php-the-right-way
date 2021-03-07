@@ -3,14 +3,14 @@ isChild: true
 anchor:  error_reporting
 ---
 
-## Error Reporting {#error_reporting_title}
+## Virheraportointi {#error_reporting_title}
 
 Error logging can be useful in finding the problem spots in your application, but it can also expose information about
 the structure of your application to the outside world. To effectively protect your application from issues that could
 be caused by the output of these messages, you need to configure your server differently in development versus
 production (live).
 
-### Development
+### Kehityksessä
 
 To show every possible error during **development**, configure the following settings in your `php.ini`:
 
@@ -35,7 +35,7 @@ use either `-1` or `E_ALL | E_STRICT`.
 * &nbsp; 5.3 `-1` or `E_ALL | E_STRICT`
 * &gt; 5.3 `-1` or `E_ALL`
 
-### Production
+### Tuotannossa
 
 To hide errors on your **production** environment, configure your `php.ini` as:
 

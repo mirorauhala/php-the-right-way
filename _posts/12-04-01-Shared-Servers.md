@@ -3,7 +3,7 @@ isChild: true
 anchor:  shared_servers
 ---
 
-## Shared Servers {#shared_servers_title}
+## Jaetut palvelimet {#shared_servers_title}
 
 PHP has shared servers to thank for its popularity. It is hard to find a host without PHP installed, but be sure it's
 the latest version. Shared servers allow you and other developers to deploy websites to a single machine. The upside to

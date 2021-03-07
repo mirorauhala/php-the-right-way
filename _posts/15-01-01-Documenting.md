@@ -1,6 +1,6 @@
 ---
 anchor: documenting
-title:  Documenting your Code
+title:  Koodin documentointi
 ---
 
-# Documenting your Code {#documenting_title}
+# Koodin documentointi {#documenting_title}

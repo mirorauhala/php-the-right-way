@@ -3,7 +3,7 @@ isChild: true
 anchor:  opcode_cache
 ---
 
-## Opcode Cache {#opcode_cache_title}
+## Opcode välimuisti {#opcode_cache_title}
 
 When a PHP file is executed, it must first be compiled into [opcodes](https://secure.php.net/manual/internals2.opcodes.php) (machine language instructions for the CPU). If the source code is unchanged, the opcodes will be the same, so this compilation step becomes a waste of CPU resources.
 

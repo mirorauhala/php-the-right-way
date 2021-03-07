@@ -3,7 +3,7 @@ isChild: true
 anchor:  command_line_interface
 ---
 
-## Command Line Interface {#command_line_interface_title}
+## Komentorivikäyttöliittymä {#command_line_interface_title}
 
 PHP was created to write web applications, but is also useful for scripting command line interface (CLI) programs.
 Command line PHP programs can help automate common tasks like testing, deployment, and application administration.

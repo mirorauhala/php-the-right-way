@@ -3,11 +3,11 @@ isChild: true
 anchor:  mac_setup
 ---
 
-## Mac Setup {#mac_setup_title}
+## Mac asennus {#mac_setup_title}
 
 macOS comes prepackaged with PHP but it is normally a little behind the latest stable release. There are multiple ways to install the latest PHP version on macOS.
 
-### Install PHP via Homebrew
+### Asenna PHP Homebrewilla
 
 [Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, and PHP 8.0. Install the latest version with this command:
 
@@ -17,7 +17,7 @@ brew install php@8.0
 
 You can switch between Homebrew PHP versions by modifying your `PATH` variable. Alternatively, you can use [brew-php-switcher][brew-php-switcher] to switch PHP versions automatically.
 
-### Install PHP via Macports
+### Asenna PHP Macportsilla
 
 The [MacPorts] Project is an open-source community initiative to design an
 easy-to-use system for compiling, installing, and upgrading either
@@ -37,23 +37,23 @@ And you can run `select` command to switch your active PHP:
 
     sudo port select --set php php80
 
-### Install PHP via phpbrew
+### Asenna PHP phpbrewillä
 
 [phpbrew] is a tool for installing and managing multiple PHP versions. This can be really useful if two different
 applications/projects require different versions of PHP, and you are not using virtual machines.
 
-### Install PHP via Liip's binary installer
+### Asenna PHP Liip:in binäärillä
 
 Another popular option is [php-osx.liip.ch] which provides one liner installation methods for versions 5.3 through 7.3.
 It doesn't overwrite the PHP binaries installed by Apple, but installs everything in a separate location (/usr/local/php5).
 
-### Compile from Source
+### Kasaa läheteestä
 
 Another option that gives you control over the version of PHP you install, is to [compile it yourself][mac-compile].
 In that case be sure to have installed either [Xcode][xcode-gcc-substitution] or Apple's substitute
 ["Command Line Tools for XCode"] downloadable from Apple's Mac Developer Center.
 
-### All-in-One Installers
+### All-in-One asentajat
 
 The solutions listed above mainly handle PHP itself, and do not supply things like [Apache][apache], [Nginx][nginx] or a SQL server.
 "All-in-one" solutions such as [MAMP][mamp-downloads] and [XAMPP][xampp] will install these other bits of software for

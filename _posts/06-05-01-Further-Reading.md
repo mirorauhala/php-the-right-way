@@ -3,7 +3,7 @@ isChild: true
 anchor:  further_reading
 ---
 
-## Further Reading {#further_reading_title}
+## Lisäluettavaa {#further_reading_title}
 
 * [What is Dependency Injection?](http://fabien.potencier.org/article/11/what-is-dependency-injection)
 * [Dependency Injection: An analogy](https://mwop.net/blog/260-Dependency-Injection-An-analogy.html)

@@ -4,12 +4,12 @@ isChild: true
 anchor:  virtual_or_dedicated_servers
 ---
 
-## Virtual or Dedicated Servers {#virtual_or_dedicated_servers_title}
+## Virtuaalinen vai oma dedikoitu palvelin {#virtual_or_dedicated_servers_title}
 
 If you are comfortable with systems administration, or are interested in learning it, virtual or dedicated servers give
 you complete control of your application's production environment.
 
-### nginx and PHP-FPM
+### nginx ja PHP-FPM
 
 PHP, via PHP's built-in FastCGI Process Manager (FPM), pairs really nicely with [nginx], which is a lightweight,
 high-performance web server. It uses less memory than Apache and can better handle more concurrent requests. This is
@@ -19,7 +19,7 @@ especially important on virtual servers that don't have much memory to spare.
 * [Read more on PHP-FPM][phpfpm]
 * [Read more on setting up nginx and PHP-FPM securely][secure-nginx-phpfpm]
 
-### Apache and PHP
+### Apache ja PHP
 
 PHP and Apache have a long history together. Apache is wildly configurable and has many available
 [modules][apache-modules] to extend functionality. It is a popular choice for shared servers and an easy setup for PHP

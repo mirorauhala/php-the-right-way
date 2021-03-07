@@ -1,7 +1,7 @@
 ---
-title:  Errors and Exceptions
+title:  Virheet ja poikkeukset
 anchor: errors_and_exceptions
 ---
 
-# Errors and Exceptions {#errors_and_exceptions_title}
+# Virheet ja poikkeukset {#errors_and_exceptions_title}
 

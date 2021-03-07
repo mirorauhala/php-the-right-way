@@ -3,7 +3,7 @@ isChild: true
 anchor:  exceptions
 ---
 
-## Exceptions {#exceptions_title}
+## Poikkeukset {#exceptions_title}
 
 Exceptions are a standard part of most popular programming languages, but they are often overlooked by PHP programmers.
 Languages like Ruby are extremely Exception heavy, so whenever something goes wrong such as a HTTP request failing, or
@@ -46,7 +46,7 @@ finally
 }
 {% endhighlight %}
 
-### SPL Exceptions
+### SPL poikkeukset
 
 The generic `Exception` class provides very little debugging context for the developer; however, to remedy this, it is
 possible to create a specialized `Exception` type by sub-classing the generic `Exception` class:

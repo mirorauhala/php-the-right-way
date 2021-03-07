@@ -4,7 +4,7 @@ isChild: true
 anchor:  composer_and_packagist
 ---
 
-## Composer and Packagist {#composer_and_packagist_title}
+## Composer ja Packagist {#composer_and_packagist_title}
 
 Composer is the recommended dependency manager for PHP. List your project's dependencies in a `composer.json` file and,
 with a few simple commands, Composer will automatically download your project's dependencies and setup autoloading for
@@ -13,7 +13,7 @@ you. Composer is analogous to NPM in the node.js world, or Bundler in the Ruby w
 There is a plethora of PHP libraries that are compatible with Composer and ready to be used in your project. These
 "packages" are listed on [Packagist], the official repository for Composer-compatible PHP libraries.
 
-### How to Install Composer
+### Kuinka Composer asennetaan?
 
 The safest way to download composer is by [following the official instructions](https://getcomposer.org/download/).
 This will verify the installer is not corrupt or tampered with.
@@ -29,13 +29,13 @@ mv composer.phar /usr/local/bin/composer
 
 To run a locally installed Composer you'd use `php composer.phar`, globally it's simply `composer`.
 
-#### Installing on Windows
+#### Asentaminen Windowsilla
 
 For Windows users the easiest way to get up and running is to use the [ComposerSetup] installer, which
 performs a global install and sets up your `$PATH` so that you can just call `composer` from any
 directory in your command line.
 
-### How to Define and Install Dependencies
+### Kuinka määritellä ja asentaa riippuvuudet?
 
 Composer keeps track of your project's dependencies in a file called `composer.json`. You can manage it
 by hand if you like, or use Composer itself. The `composer require` command adds a project dependency

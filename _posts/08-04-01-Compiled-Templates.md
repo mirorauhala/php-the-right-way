@@ -3,7 +3,7 @@ isChild: true
 anchor:  compiled_templates
 ---
 
-## Compiled Templates {#compiled_templates_title}
+## Kootut mallit {#compiled_templates_title}
 
 While PHP has evolved into a mature, object oriented language, it [hasn't improved much][article_templating_engines] as
 a templating language. Compiled templates, like [Twig], [Brainy], or [Smarty]*, fill this void by offering a new syntax that has
@@ -14,7 +14,7 @@ there is a slight performance hit, however this is very minimal when proper cach
 
 **While Smarty offers automatic escaping, this feature is NOT enabled by default.*
 
-### Simple example of a compiled template
+### Yksinkertainen esimerkki kootusta mallista
 
 Using the [Twig] library.
 
@@ -29,7 +29,7 @@ Using the [Twig] library.
 {% endraw %}
 {% endhighlight %}
 
-### Example of compiled templates using inheritance
+### Esimerkki kootuista malleista käyttäen periytymistä
 
 Using the [Twig] library.
 

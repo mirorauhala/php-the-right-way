@@ -3,7 +3,7 @@ isChild: true
 anchor:  basic_concept
 ---
 
-## Basic Concept {#basic_concept_title}
+## Peruskonsepti {#basic_concept_title}
 
 We can demonstrate the concept with a simple, yet naive example.
 
