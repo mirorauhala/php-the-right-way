@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  register_globals
+title: Register Globals
 ---
 
 ## Register Globals {#register_globals_title}

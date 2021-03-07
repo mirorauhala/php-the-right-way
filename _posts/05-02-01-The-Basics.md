@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  the_basics
+title: Perusteet
 ---
 
 ## Perusteet {#the_basics_title}

@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  components
+title: Komponentit
 ---
 
 ## Komponentit {#components_title}

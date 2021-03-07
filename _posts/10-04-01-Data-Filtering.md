@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  data_filtering
+title: Datan suodatus
 ---
 
 ## Datan suodatus {#data_filtering_title}

@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  basic_concept
+title: Peruskonsepti
 ---
 
 ## Peruskonsepti {#basic_concept_title}

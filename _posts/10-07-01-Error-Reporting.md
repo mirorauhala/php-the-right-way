@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  error_reporting
+title: Virheraportointi
 ---
 
 ## Virheraportointi {#error_reporting_title}

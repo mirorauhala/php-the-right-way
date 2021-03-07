@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  frameworks
+title: Kehykset
 ---
 
 ## Kehykset {#frameworks_title}

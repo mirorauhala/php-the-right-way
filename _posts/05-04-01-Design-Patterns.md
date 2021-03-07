@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  design_patterns
+title: Suunnittelumallit
 ---
 
 ## Suunnittelumallit {#design_patterns_title}

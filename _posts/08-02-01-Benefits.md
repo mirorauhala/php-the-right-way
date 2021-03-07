@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  templating_benefits
+title:   Edut
 ---
 
 ## Edut {#templating_benefits_title}

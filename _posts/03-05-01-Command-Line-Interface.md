@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  command_line_interface
+title: Komentorivikäyttöliittymä
 ---
 
 ## Komentorivikäyttöliittymä {#command_line_interface_title}

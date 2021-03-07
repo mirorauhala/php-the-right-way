@@ -1,4 +1,5 @@
 ---
+title: Koodityylin opas
 anchor: code_style_guide
 ---
 

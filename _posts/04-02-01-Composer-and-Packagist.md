@@ -1,5 +1,5 @@
 ---
-title:   Composer and Packagist
+title:   Composer ja Packagist
 isChild: true
 anchor:  composer_and_packagist
 ---

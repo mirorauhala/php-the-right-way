@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  namespaces
+title: Nimiavaruudet
 ---
 
 ## Nimiavaruudet {#namespaces_title}

@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  programming_paradigms
+title: Ohjelmointiparadigmat
 ---
 
 ## Ohjelmointiparadigmat {#programming_paradigms_title}

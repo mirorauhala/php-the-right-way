@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  password_hashing
+title: Salasanojen hajautus
 ---
 
 ## Salasanojen hajautus {#password_hashing_title}

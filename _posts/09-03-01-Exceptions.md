@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  exceptions
+title: Poikkeukset
 ---
 
 ## Poikkeukset {#exceptions_title}

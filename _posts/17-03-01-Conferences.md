@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  conferences
+title: PHP konferenssit
 ---
 
 ## PHP konferenssit {#conferences_title}

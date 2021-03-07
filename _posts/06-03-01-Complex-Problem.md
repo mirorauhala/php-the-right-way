@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  complex_problem
+title: Monimutkainen ongelma
 ---
 
 ## Monimutkainen ongelma {#complex_problem_title}

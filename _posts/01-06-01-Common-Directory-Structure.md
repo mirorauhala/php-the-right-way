@@ -1,5 +1,5 @@
 ---
-title:   Yleinen hakemistorakenne
+title: Yleinen hakemistorakenne
 isChild: true
 anchor:  common_directory_structure
 ---

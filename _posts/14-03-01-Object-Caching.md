@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  object_caching
+title: Objektivälimuisti
 ---
 
 ## Objektivälimuisti {#object_caching_title}

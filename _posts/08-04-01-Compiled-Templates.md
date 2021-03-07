@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  compiled_templates
+title: Kootut mallit
 ---
 
 ## Kootut mallit {#compiled_templates_title}

@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  mentoring
+title: Mentorointi
 ---
 
 ## Mentorointi {#mentoring_title}

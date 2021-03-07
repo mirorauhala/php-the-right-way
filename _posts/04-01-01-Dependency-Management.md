@@ -1,5 +1,6 @@
 ---
 anchor: dependency_management
+title: Riippuvuuksien hallinta
 ---
 
 # Riippuvuuksien hallinta {#dependency_management_title}

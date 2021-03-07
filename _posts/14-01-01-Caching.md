@@ -1,5 +1,6 @@
 ---
 anchor: caching
+title: Välimuisti
 ---
 
 # Välimuisti {#caching_title}

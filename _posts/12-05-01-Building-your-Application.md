@@ -1,9 +1,10 @@
 ---
 isChild: true
 anchor:  building_and_deploying_your_application
+title: Sovelluksesi luominen ja tuotantokäyttöönotto
 ---
 
-## Sovelluksesi luominen ja tuotantokäyttöönoton {#building_and_deploying_your_application_title}
+## Sovelluksesi luominen ja tuotantokäyttöönotto {#building_and_deploying_your_application_title}
 
 If you find yourself doing manual database schema changes or running your tests manually before updating your files
 (manually), think twice! With every additional manual task needed to deploy a new version of your app, the chances for

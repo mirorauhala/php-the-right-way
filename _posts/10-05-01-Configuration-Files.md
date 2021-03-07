@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  configuration_files
+title: Määritystiedostot
 ---
 
 ## Määritystiedostot {#configuration_files_title}

@@ -1,4 +1,5 @@
 ---
+title: Mac asennus
 isChild: true
 anchor:  mac_setup
 ---

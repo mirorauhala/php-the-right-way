@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  user_groups
+title: PHP-käyttäjäryhmät
 ---
 
 ## PHP-käyttäjäryhmät {#user_groups_title}

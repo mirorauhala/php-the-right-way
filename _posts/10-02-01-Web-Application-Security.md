@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  web_application_security
+title: Verkkosovellusten turvallisuus
 ---
 
 ## Verkkosovellusten turvallisuus {#web_application_security_title}

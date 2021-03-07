@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  elephpants
+title: ElePHPants
 ---
 
 ## ElePHPants {#elephpants_title}

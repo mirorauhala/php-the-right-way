@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  shared_servers
+title: Jaetut palvelimet
 ---
 
 ## Jaetut palvelimet {#shared_servers_title}

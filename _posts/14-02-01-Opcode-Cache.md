@@ -1,6 +1,7 @@
 ---
 isChild: true
 anchor:  opcode_cache
+title: Opcode välimuisti
 ---
 
 ## Opcode välimuisti {#opcode_cache_title}
