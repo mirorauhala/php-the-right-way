@@ -4,65 +4,82 @@ anchor:  password_hashing
 title: Salasanojen hajautus
 ---
 
-## Salasanojen hajautus {#password_hashing_title}
+## Salasanojen tiivistäminen tai hajautus {#password_hashing_title}
 
-Eventually everyone builds a PHP application that relies on user login. Usernames and passwords are stored in a
-database and later used to authenticate users upon login.
+Lopulta jokainen rakentaa PHP sovelluksen joka perustuu käyttäjän kirjautumiseen.
+Käyttäjänimet ja salasanat ovat tallennetuna tietokannassa, joita käytetään
+käyttäjän autentikointiin kirjautumisen yhteydessä.
 
-It is important that you properly [_hash_][3] passwords before storing them. Hashing and encrypting are [two very different things][7]
-that often get confused.
+On tärkeää että [_hajautat_][3] salasanat kunnolla ennen tallentamista. Hajauttaminen
+ja salaaminen ovat [kaksi hyvin erilaista asiaa][7], jotka usein sekoitetaan
+keskenään.
 
-Hashing is an irreversible, one-way function. This produces a fixed-length string that cannot be feasibly reversed.
-This means you can compare a hash against another to determine if they both came from the same source string, but you
-cannot determine the original string. If passwords are not hashed and your database is accessed by an unauthorized
-third-party, all user accounts are now compromised.
+Hajauttaminen on peruuttamaton, yksisuuntainen funktio. Tämä tuottaa
+samanpituisen merkkijonon, jota ei voida käytännössä palauttaa takaisin.
+Tämä tarkoittaa, että voit verrata hajautusta toiseen selvittääksesi, ovatko ne
+molemmat peräisin samasta alkuperäisestä merkkijonosta, mutta et voi päätellä
+alkuperäistä merkkijonoa. Jos salasanat eivät ole hajautettu ja tietokantaasi
+pääsee luvaton kolmas osapuoli, kaikki käyttäjätilit ovat nyt vaarantuneet.
 
-Unlike hashing, encryption is reversible (provided you have the key). Encryption is useful in other areas, but is a poor
-strategy for securely storing passwords.
+Toisin kuin hajauttaminen, salaus on mahdollista purkaa (edellyttäen, että
+sinulla on avain). Salaaminen on hyödyllistä muissa tapauksisa, mutta on heikko
+strategia turvalliseen salasanan tallentamiseen.
 
-Passwords should also be individually [_salted_][5] by adding a random string to each password before hashing. This prevents dictionary attacks and the use of "rainbow tables" (a reverse list of crytographic hashes for common passwords.)
+Salasanojen tulisi olla myös erikseen [_suolattuja_][5] lisäämällä satunnainen
+merkkijono jokaiseen salasanaan ennen hajautusta. Tämä estää
+sanakirjahyökkäykset ja "sateenkaaritaulujen" (käänteinen luettelo tavallisten
+salasanojen kryptografisista hajautuksista) käytön.
 
-Hashing and salting are vital as often users use the same password for multiple services and password quality can be poor.
+Hajautus ja suolaus ovat elintärkeitä, koska usein käyttäjät käyttävät samaa
+salasanaa useissa palveluissa ja salasanan laatu voi olla huono.
 
-Additionally, you should use [a specialized _password hashing_ algorithm][6] rather than fast, general-purpose
-cryptographic hash function (e.g. SHA256). The short list of acceptable password hashing algorithms (as of June 2018)
-to use are:
+Lisäksi, sinun tulisi käyttää [erikoistunutta _salasanan hajautusalgoritmia_][6] 
+nopean yleiskäyttöisen kryptografisen tiivistefunktion sijaan (esim. SHA256).
+Lyhyt lista hyväksytyistä salasanan hajautusalgoritmeista (kesäkuusta 2018
+lähtien) ovat:
 
-* Argon2 (available in PHP 7.2 and newer)
+* Argon2 (saatavilla PHP versiossa 7.2 ja uudemmissa)
 * Scrypt
-* **Bcrypt** (PHP provides this one for you; see below)
-* PBKDF2 with HMAC-SHA256 or HMAC-SHA512
+* **Bcrypt** (PHP tarjoaa tämän sinulle; lue alta)
+* PBKDF2 jossa HMAC-SHA256 tai HMAC-SHA512
 
-Fortunately, nowadays PHP makes this easy.
+Onneksi PHP tekee tämän nykyään helpoksi.
 
-**Hashing passwords with `password_hash`**
+**Salasanojen hajauttaminen `password_hash` funktiolla**
 
-In PHP 5.5 `password_hash()` was introduced. At this time it is using BCrypt, the strongest algorithm currently
-supported by PHP. It will be updated in the future to support more algorithms as needed though. The `password_compat`
-library was created to provide forward compatibility for PHP >= 5.3.7.
+PHP:n 5.5 versiossa julkaistiin `password_hash()`. Tällä hetkellä se käyttää
+BCryptia, vahvinta algoritmia tällä hetkellä tuettuna PHP:ssa. Tulevaisuudessa
+se päivitetään tukemaan tarvittaessa enemmän algoritmeja. `password_compat`
+kirjasto luotiin tarjoamaan yhteensopivuus PHP:n versioille >= 5.3.7.
 
-Below we hash a string, and then check the hash against a new string. Because our two source strings are different
-('secret-password' vs. 'bad-password') this login will fail.
+Alla me hajautamme taikka toisin sanottuna tiivistämme merkkijonoa. Sitten
+vertaamme hajautusta toista merkkijonoa vastaan. Koska molemmat alkuperäiset
+merkkijonot ovat erilaisia ('salainen-salasana' vs. 'huono-salasana'), tämä
+kirjautuminen epäonnistuu.
+
 
 {% highlight php %}
 <?php
 require 'password.php';
 
-$passwordHash = password_hash('secret-password', PASSWORD_DEFAULT);
+$passwordHash = password_hash('salainen-salasana', PASSWORD_DEFAULT);
 
-if (password_verify('bad-password', $passwordHash)) {
-    // Correct Password
+if (password_verify('huono-salasana', $passwordHash)) {
+    // Oikea salasana
 } else {
-    // Wrong password
+    // Väärä salasana
 }
 {% endhighlight %}
 
-`password_hash()` takes care of password salting for you. The salt is stored, along with the algorithm and "cost", as part of the hash.  `password_verify()` extracts this to determine how to check the password, so you don't need a separate database field to store your salts.
+`password_hash()` huolehtii salasanan suolauksesta puolestasi. Suola on
+tallennettu yhdessä algoritmin "tehon" kanssa hajautuksessa.
+`password_verify()` poimii tämän salasanan tarkistamiseksi, jotta sinun ei
+tarvitse tehdä erillistä saraketta tietokantaan suolaa varten.
 
-* [Learn about `password_hash()`] [1]
-* [`password_compat` for PHP >= 5.3.7 && < 5.5] [2]
-* [Learn about hashing in regards to cryptography] [3]
-* [Learn about salts] [5]
+* [Lue lisää `password_hash()`] [1]
+* [`password_compat` PHP:n versioille >= 5.3.7 && < 5.5] [2]
+* [Lue lisää kryptografisesta hajautuksesta] [3]
+* [Lue lisää suolaamisesta] [5]
 * [PHP `password_hash()` RFC] [4]
 
 
