@@ -1,12 +1,12 @@
 ---
 layout: page
-title:  The Basics
+title:  Perusteet
 sitemap: true
 ---
 
-# The Basics
+# Perusteet
 
-## Comparison operators
+## Vertailuoperaattorit
 
 Comparison operators are an often overlooked aspect of PHP, which can lead to many unexpected outcomes. One such
 problem stems from strict comparisons (the comparison of booleans as integers).
@@ -35,9 +35,9 @@ if (strpos('testing', 'test') !== false) {    // true, as strict comparison was 
 * [Comparison table](http://php.net/types.comparisons)
 * [Comparison cheatsheet](http://phpcheatsheets.com/index.php?page=compare)
 
-## Conditional statements
+## Ehtolauseet
 
-### If statements
+### If lause
 
 While using 'if/else' statements within a function or class method, there is a common misconception that 'else' must be used
 in conjunction to declare potential outcomes. However if the outcome is to define the return value, 'else' is not
@@ -75,7 +75,7 @@ function test($a)
 
 * [If statements](http://php.net/control-structures.if)
 
-### Switch statements
+### Switch -rakenne
 
 Switch statements are a great way to avoid typing endless if's and elseif's, but there are a few things to be aware of:
 
@@ -109,7 +109,7 @@ function test($a)
 * [Switch statements](http://php.net/control-structures.switch)
 * [PHP switch](http://phpswitch.com/)
 
-## Global namespace
+## Globaali nimiavaruus
 
 When using namespaces, you may find that internal functions are hidden by functions you wrote. To fix this, refer to
 the global function by using a backslash before the function name.
@@ -134,9 +134,9 @@ function array()
 * [Global space](http://php.net/language.namespaces.global)
 * [Global rules](http://php.net/userlandnaming.rules)
 
-## Strings
+## Merkkijonot
 
-### Concatenation
+### Ketjutus
 
 - If your line extends beyond the recommended line length (120 characters), consider concatenating your line
 - For readability it is best to use concatenation operators over concatenating assignment operators
@@ -158,12 +158,12 @@ $a = 'Multi-line example'      // concatenation operator (.)
 
 * [String Operators](http://php.net/language.operators.string)
 
-### String types
+### Merkkijonojen tyypit
 
 Strings are a series of characters, which should sound fairly simple. That said, there are a few different types of
 strings and they offer slightly different syntax, with slightly different behaviors.
 
-#### Single quotes
+#### Puolilainausmerkit
 
 Single quotes are used to denote a "literal string". Literal strings do not attempt to parse special characters or
 variables.
@@ -186,7 +186,7 @@ echo 'This is my string, look at how pretty it is.';    // no need to parse a si
 
 * [Single quote](http://php.net/language.types.string#language.types.string.syntax.single)
 
-#### Double quotes
+#### Lainausmerkit
 
 Double quotes are the Swiss Army Knife of strings. They will not only parse variables as mentioned above, but all sorts
 of special characters, like `\n` for newline, `\t` for a tab, etc.
@@ -236,7 +236,7 @@ echo "I drank some juice made of {$juice[1]}s";   // $juice[1] will be parsed
 
 * [Double quotes](http://php.net/language.types.string#language.types.string.syntax.double)
 
-#### Nowdoc syntax
+#### Nowdoc syntaksi
 
 Nowdoc syntax was introduced in 5.3 and internally behaves the same way as single quotes except it is suited toward the
 use of multi-line strings without the need for concatenating.
@@ -262,7 +262,7 @@ EOD;                        // closing 'EOD' must be on it's own line, and to th
 
 * [Nowdoc syntax](http://php.net/language.types.string#language.types.string.syntax.nowdoc)
 
-#### Heredoc syntax
+#### Heredoc syntaksi
 
 Heredoc syntax internally behaves the same way as double quotes except it is suited toward the use of multi-line
 strings without the need for concatenating.
@@ -310,7 +310,7 @@ $a are parsed.
  */
 {% endhighlight %}
 
-### Which is quicker?
+### Kumpi on nopeampi?
 
 There is a myth floating around that single quote strings are fractionally quicker than double quote strings. This is
 fundamentally not true.
@@ -329,7 +329,7 @@ optimization unless you really understand the meaning and impact of the differen
 * [Disproving the Single Quotes Performance Myth](http://nikic.github.io/2012/01/09/Disproving-the-Single-Quotes-Performance-Myth.html)
 
 
-## Ternary operators
+## Ternary operaattori
 
 Ternary operators are a great way to condense code, but are often used in excess. While ternary operators can be
 stacked/nested, it is advised to use one per line for readability.
@@ -378,7 +378,7 @@ return $a == 3; // Will return true if $a == 3 or false
 
 This can also be said for all operations(===, !==, !=, == etc).
 
-#### Utilising brackets with ternary operators for form and function
+#### Sulkeiden käyttö ternary operaattoreissa muodon ja toiminnan takia
 
 When utilising a ternary operator, brackets can play their part to improve code readability and also to include unions
 within blocks of statements. An example of when there is no requirement to use bracketing is:
@@ -403,7 +403,7 @@ also true.
 return ($a == 3 && $b == 4) && $c == 5;
 {% endhighlight %}
 
-Another example is the snippet below which will return true if ($a != 3 AND $b != 4) OR $c == 5.
+Toinen esimerkki on koodinpätkä alhaalla, joka palauttaa tosi, jos ($a != 3 AND $b != 4) TAI $c == 5.
 
 {% highlight php %}
 <?php
