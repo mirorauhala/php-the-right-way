@@ -6,59 +6,75 @@ anchor:  mac_setup
 
 ## Mac asennus {#mac_setup_title}
 
-macOS comes prepackaged with PHP but it is normally a little behind the latest stable release. There are multiple ways to install the latest PHP version on macOS.
+macOS käyttöjärjestelmän mukana PHP tulee sisäänrakennettuna, mutta se on hieman
+jäljessä uusimmasta vakaasta versiosta. On useita tapoja asentaa uusin versio
+macOS:lle.
 
 ### Asenna PHP Homebrewilla
 
-[Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, and PHP 8.0. Install the latest version with this command:
+[Homebrew] on paketinhallintasovellus macOS:lle, jonka avulla voit helposti
+asentaa PHP:n ja useita lisäosia. Homebrewin ydin repository tarjoaa "kaavoja"
+PHP:n versioille 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, sekä PHP 8.0. Asenna uusin versio
+seuraavalla komennolla:
 
 ```
 brew install php@8.0
 ```
 
-You can switch between Homebrew PHP versions by modifying your `PATH` variable. Alternatively, you can use [brew-php-switcher][brew-php-switcher] to switch PHP versions automatically.
+Voit vaihtaa Homebrewin PHP versioiden välillä muuttamalla `PATH`
+ympäristömuuttujaa. Vaihtoehtoisesti, voit käyttää
+[brew-php-switcher][brew-php-switcher] PHP:n automaattiseen vaihtoon.
 
 ### Asenna PHP Macportsilla
 
-The [MacPorts] Project is an open-source community initiative to design an
-easy-to-use system for compiling, installing, and upgrading either
-command-line, X11 or Aqua based open-source software on the OS X operating
-system.
+[MacPorts] projekti on avoimen lähdekoodin yhteisöaloite, jonka tarkoituksena on
+suunnitella helppokäyttöinen järjestelmä kääntämistä, asentamista ja
+komentorivisovellusten, X11, tai Aqua pohjaisten avoimen-lähdekoodin
+ohjelmistojen päivittämistä varten macOS käyttöjärjestelmässä.
 
-MacPorts supports pre-compiled binaries, so you don't need to recompile every
-dependency from the source tarball files, it saves your life if you don't
-have any package installed on your system.
+MacPorts tukee valmiiksi käännettyjä binäärejä, jotta sinun ei tarvitse kääntää
+jokaista riippuvuutta lähteistä, pelastaen elämäsi, jos sinulla ei ole mitään
+paketteja asennettuna järjestelmässäsi.
 
-At this point, you can install `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, `php73`, `php74` or `php80` using the `port install` command, for example:
+Tällä hetkellä voit asentaa `php54`, `php55`, `php56`, `php70`, `php71`,
+`php72`, `php73`, `php74` tai `php80` käyttämällä `port install` -komentoa,
+esimerkiksi:
 
     sudo port install php74
     sudo port install php80
 
-And you can run `select` command to switch your active PHP:
+Voit myös suorittaa `select` -komennon vaihtaaksesi aktiivisen PHP:n, näin:
 
     sudo port select --set php php80
 
 ### Asenna PHP phpbrewillä
 
-[phpbrew] is a tool for installing and managing multiple PHP versions. This can be really useful if two different
-applications/projects require different versions of PHP, and you are not using virtual machines.
+[phpbrew] on työkalu useiden eri PHP versioiden asentamista ja hallinnointia
+varten. Tämä voi olla todella kätevää jos kaksi eri sovellusta/projektia
+vaativat eri version PHP:sta, etkä käytä virtuaalikoneita.
 
 ### Asenna PHP Liip:in binäärillä
 
-Another popular option is [php-osx.liip.ch] which provides one liner installation methods for versions 5.3 through 7.3.
-It doesn't overwrite the PHP binaries installed by Apple, but installs everything in a separate location (/usr/local/php5).
+Toinen suosittu vaihtoehto on [php-osx.liip.ch], joka tarjoaa yhden koodirivin
+asennuksen 5.3 versiosta 7.3 versioon saakka.
+Se ei uudelleenkirjoita Applen asentamia PHP binäärejä, vaan asentaa kaiken
+erilliseen hakemistoon (/usr/local/php5).
 
 ### Kasaa läheteestä
 
-Another option that gives you control over the version of PHP you install, is to [compile it yourself][mac-compile].
-In that case be sure to have installed either [Xcode][xcode-gcc-substitution] or Apple's substitute
-["Command Line Tools for XCode"] downloadable from Apple's Mac Developer Center.
+Toinen vaihtoehto, joka antaa sinun päättää minkä PHP version asennat on PHP:n
+[asentaminen suoraan lähteestä][mac-compile].
+Tässä tapauksessa varmista, että sinulla on asennettuna joko
+[Xcode][xcode-gcc-substitution] tai Applen vastaava
+["Command Line Tools for XCode"] ladattavissa Applen Mac Developer Centeristä.
 
 ### All-in-One asentajat
 
-The solutions listed above mainly handle PHP itself, and do not supply things like [Apache][apache], [Nginx][nginx] or a SQL server.
-"All-in-one" solutions such as [MAMP][mamp-downloads] and [XAMPP][xampp] will install these other bits of software for
-you and tie them all together, but ease of setup comes with a trade-off of flexibility.
+Ylhäällä listatut vaihtoehdot pääasiassa asentavat PHP:n itsessään eivätkä
+tarjoa ohjelmia kuten [Apache][apache], [Nginx][nginx] tai SQL palvelinta.
+"All-in-one" ratkaisut kuten [MAMP][mamp-downloads] tai [XAMPP][xampp] asentavat
+nämä loput ohjelmistojen palaset puolestasi ja kasaavat ne yhteen, mutta
+asennuksen helppous tulee joustavuuden kompromissina.
 
 [Homebrew]: https://brew.sh/
 [Homebrew PHP]: https://github.com/Homebrew/homebrew-php#installation
