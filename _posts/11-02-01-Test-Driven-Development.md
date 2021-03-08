@@ -6,7 +6,7 @@ title: Testiohjattu kehitys
 
 ## Testiohjattu kehitys (TDD) {#test_driven_development_title}
 
-From [Wikipedia](https://wikipedia.org/wiki/Test-driven_development):
+[Wikipediasta](https://wikipedia.org/wiki/Test-driven_development):
 
 > Test-driven development (TDD) is a software development process that relies on the repetition of a very short
 > development cycle: first the developer writes a failing automated test case that defines a desired improvement or new
@@ -43,7 +43,7 @@ are several alternatives
 
 ### Integraation testaus
 
-From [Wikipedia](https://wikipedia.org/wiki/Integration_testing):
+[Wikipediasta](https://wikipedia.org/wiki/Integration_testing):
 
 > Integration testing (sometimes called Integration and Testing, abbreviated "I&T") is the phase in software testing in
 > which individual software modules are combined and tested as a group. It occurs after unit testing and before
