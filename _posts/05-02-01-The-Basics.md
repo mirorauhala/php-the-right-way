@@ -6,9 +6,11 @@ title: Perusteet
 
 ## Perusteet {#the_basics_title}
 
-PHP is a vast language that allows coders of all levels the ability to produce code not only quickly, but efficiently.
-However, while advancing through the language, we often forget the basics that we first learnt (or overlooked) in favor
-of short cuts and/or bad habits. To help combat this common issue, this section is aimed at reminding coders of the
-basic coding practices within PHP.
+PHP on valtava kieli, joka antaa kaiken tason koodareille mahdollisuuden tuottaa
+koodia paitsi nopeasti, mutta myös tehokkaasti. Kun kielessä etenee, usein ne
+perusasiat jotka ensin opitaan unohdetaan oikoteiden tai muiden huonojen tapojen
+vuoksi. Tämän osan tarkoituksena on muistuttaa koodereita koodauksen
+peruskäytännöt PHP:ssä.
 
-* Continue reading on [The Basics](/pages/The-Basics.html)
+
+* Jatka lukemista [Perusteet](/pages/The-Basics.html) -sivulla.
