@@ -5,10 +5,11 @@ anchor: code_style_guide
 
 # Koodityylin opas {#code_style_guide_title}
 
-The PHP community is large and diverse, composed of innumerable libraries, frameworks, and components. It is common for
-PHP developers to choose several of these and combine them into a single project. It is important that PHP code adhere
-(as close as possible) to a common code style to make it easy for developers to mix and match various libraries for
-their projects.
+PHP yhteisö on laaja ja monipuolinen, koottu lukemattomista kirjastoista,
+kehyksistä, sekä komponenteista. On yleistä PHP-kehittäjien valita useita näistä
+ja yhdistää ne yhteen projektiin. On tärkeää, että PHP koodi mukautuu
+(mahdollisimman tarkasti) yleiseen koodityyliin, helpottaakseen kehittähiä, kun
+he yhdistävät useita kirjastoja omiin projekteihinsa.
 
 The [Framework Interop Group][fig] has proposed and approved a series of style recommendations. Not all of them related
 to code-style, but those that do are [PSR-1][psr1], [PSR-12][psr12] and [PSR-4][psr4]. These
@@ -20,11 +21,11 @@ Ideally, you should write PHP code that adheres to a known standard. This could 
 of the coding standards made by PEAR or Zend. This means other developers can easily read and work with your code, and
 applications that implement the components can have consistency even when working with lots of third-party code.
 
-* [Read about PSR-1][psr1]
-* [Read about PSR-12][psr12]
-* [Read about PSR-4][psr4]
-* [Read about PEAR Coding Standards][pear-cs]
-* [Read about Symfony Coding Standards][symfony-cs]
+* [Lue lisää PSR-1][psr1]
+* [Lue lisää PSR-12][psr12]
+* [Lue lisää PSR-4][psr4]
+* [Lue lisää PEAR Coding Standards][pear-cs]
+* [Lue lisää Symfony Coding Standards][symfony-cs]
 
 You can use [PHP_CodeSniffer][phpcs] to check code against any one of these recommendations, and plugins for text
 editors like [Sublime Text][st-cs] to be given real-time feedback.
